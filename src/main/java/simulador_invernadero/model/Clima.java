@@ -21,10 +21,10 @@ public class Clima {
     public double co2 = 500;
 
     // 🔥 Objetivos temporales del clima
-    private double objetivoTemperatura = 30;
-    private double objetivoHumedad = 40;
-    private double objetivoLuz = 85;
-    private double objetivoCO2 = 700;
+    private double objetivoTemperatura = 35;
+    private double objetivoHumedad = 30;
+    private double objetivoLuz = 95;
+    private double objetivoCO2 = 800;
 
     // 🔥 Contador de ciclos
     private int ciclos = 0;
@@ -34,24 +34,24 @@ public class Clima {
         ciclos++;
 
         // 🔥 Cada 8 ciclos se generan nuevos objetivos
-        if (ciclos % 8 == 0) {
-
-            objetivoTemperatura = RandomUtils.rango(15, 35);
-
-            objetivoHumedad = RandomUtils.rango(30, 80);
-
-            objetivoLuz = RandomUtils.rango(40, 100);
-
-            objetivoCO2 = RandomUtils.rango(350, 800);
-
-            System.out.println("\n🌦 NUEVOS OBJETIVOS CLIMÁTICOS");
-            System.out.println(
-                "Temp Obj: " + String.format("%.2f", objetivoTemperatura) +
-                " | Humedad Obj: " + String.format("%.2f", objetivoHumedad) +
-                " | Luz Obj: " + String.format("%.2f", objetivoLuz) +
-                " | CO2 Obj: " + String.format("%.2f", objetivoCO2)
-            );
-        }
+//        if (ciclos % 8 == 0) {
+//
+//            objetivoTemperatura = RandomUtils.rango(15, 35);
+//
+//            objetivoHumedad = RandomUtils.rango(30, 80);
+//
+//            objetivoLuz = RandomUtils.rango(40, 100);
+//
+//            objetivoCO2 = RandomUtils.rango(350, 800);
+//
+//            System.out.println("\n🌦 NUEVOS OBJETIVOS CLIMÁTICOS");
+//            System.out.println(
+//                "Temp Obj: " + String.format("%.2f", objetivoTemperatura) +
+//                " | Humedad Obj: " + String.format("%.2f", objetivoHumedad) +
+//                " | Luz Obj: " + String.format("%.2f", objetivoLuz) +
+//                " | CO2 Obj: " + String.format("%.2f", objetivoCO2)
+//            );
+//        }
 
         // 🔥 Movimiento GRADUAL hacia objetivos
 
